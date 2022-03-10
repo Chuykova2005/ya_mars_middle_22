@@ -14,6 +14,7 @@
     <nav class="navbar navbar-light bg-secondary">
         <h1>Миссия Колонизация Марса</h1>
         {% if current_user.is_authenticated %}
+        <a class="btn btn-success" href="/add_work">Добавить работу</a>
     <a class="navbar-brand" href="/logout">{{ current_user.name }}</a>
         {% else %}
     <p>
